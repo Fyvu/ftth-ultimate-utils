@@ -9,7 +9,7 @@ Fdt := {Type: "Placemark", X:150, Y:360, Colors:["aa00ff","0000ff","00ffff","fff
 Fat := {Type: "Placemark", X:115, Y:360, Colors:["00ff00","ffff00","ff0000","ff00ff","000ff"]}
 Cable := {Type: "Path", X: 452, Y: 31, Colors: ["00FF00", "FF00FF", "AA00FF", "550000", "FF0000", "FFFF00", "FFAA00"]}
 HomePass := {Type: "Placemark", X: 378,  Y:460 , Colors: ["00ff00"]}
-Pole := {Type: "Placemark", X: 224,  Y: 358 , Colors: ["FF0000", "00FF00", "00FFFF", "AA00FF", "550000"] }
+Pole := {Type: "Placemark", X: 224,  Y: 358 , Colors: ["550000", "AA00FF", "00FFFF", "00FF00", "FF0000"] }
 JointClosure := {Type: "Placemark", X: 417,  Y: 323 , Colors: ["00FF00", "FF00FF", "AA00FF", "550000", "FF0000", "FFFF00", "FFAA00"] }
 SlingWire := {Type: "Placemark", X: 452,  Y: 31, Colors: ["00FFFF"] }
 
@@ -154,4 +154,7 @@ ChangeFolder(iconx, icony, color) {
 #IfWinActive ahk_exe googleearth.exe
 !e::Send, !{Enter}
 +Tab::Send, {Tab 5}
+!s::Send, {Right}^{Left 2}^{Backspace}SLACK{Enter}
+!a::Send, XXX.
+!m::Send, MR.XXX.P
 #IfWinActive
